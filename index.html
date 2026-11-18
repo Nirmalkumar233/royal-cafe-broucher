@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royal Cafe | Corporate Product Catalogue</title>
+<style>
+:root{--ink:#191816;--espresso:#251b15;--coffee:#4a3023;--gold:#b58b4d;--cream:#f5f1e9;--paper:#fffdf8;--muted:#71695f;--line:#ded6c9}
+*{box-sizing:border-box}body{margin:0;background:#d9d5ce;color:var(--ink);font-family:'Times New Roman',Times,serif}
+.toolbar{position:sticky;top:0;z-index:20;background:#211914;color:#fff;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.toolbar button{border:0;background:#e1ba66;color:#211914;font-family:'Times New Roman',Times,serif;font-size:14px;font-weight:700;padding:12px 18px;border-radius:3px;cursor:pointer}
+.toolbar span{font-size:14px;color:#ddd}
+.book{padding:24px 0}
+.page{width:210mm;height:297mm;margin:0 auto 30px;background:var(--cream);position:relative;overflow:hidden;padding:17mm 17mm 16mm;box-shadow:0 10px 35px #0002;page-break-after:always}
+.page.dark{background:var(--espresso);color:var(--cream)}
+.kicker{font-size:15px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+h1,h2,h3,p{margin-top:0}h1,h2{font-family:'Times New Roman',Times,serif;font-weight:700;letter-spacing:0}
+h1{font-size:52px;line-height:1;margin:0 0 18px}h2{font-size:34px;line-height:1.08;margin:0 0 14px}h3{font-size:17px;line-height:1.2;margin:0 0 8px}
+p{font-size:15px;line-height:1.5;color:var(--muted);margin-bottom:10px}.dark p{color:#d1c7b8}
+.gold{color:var(--gold)}.serif{font-family:'Times New Roman',Times,serif}
+.brand{display:flex;align-items:center;gap:10px;margin-bottom:32px}.brand img{width:90px;height:90px;object-fit:contain}.brand b{font-size:40px;}
+.cover-title{font-size:58px;max-width:125mm}.cover-sub{font-size:16px;line-height:1.6;max-width:95mm;color:#e5d9c7}
+.hero-photo{width:100%;height:118mm;object-fit:cover;display:block}.cover-photo{position:absolute;right:0;bottom:0;width:63%;height:53%;object-fit:cover;object-position:center}
+.cover-mark{position:absolute;left:17mm;bottom:18mm;font-size:9px;letter-spacing:.18em;color:var(--gold);font-weight:800}
+.footer{position:absolute;left:17mm;right:17mm;bottom:7mm;display:flex;justify-content:space-between;font-size:15px;letter-spacing:.12em;color:#8b8174}
+.dark .footer{color:#b8a995}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8mm}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm}
+.feature{background:var(--paper);padding:11px 12px;border-left:3px solid var(--gold);min-height:36mm}
+.feature p{font-size:11px;margin:0}.feature h3{font-size:15px}
+.big-stat{font-family:'Times New Roman',Times,serif;font-size:32px;color:var(--gold);line-height:1}
+.machine-photo{height:94mm;width:100%;object-fit:contain;background:#e7e1d7;padding:8px}
+.product-photo{width:100%;height:43mm;object-fit:contain;background:#eee8de;padding:6px}
+.product-card{background:var(--paper);padding:8px;min-height:81mm}
+.product-card h3{margin-top:8px}.product-card p{font-size:18px;margin-bottom:0}
+.split{display:grid;grid-template-columns: 1.50fr 1.05fr;gap:9mm;align-items:center}
+.split img{width:100%;height:125mm;object-fit:cover}
+.list{padding:0;margin:10px 0 0;list-style:none}.list li{font-size:15px;line-height:1.5;padding:7px 0;border-bottom:1px solid var(--line)}
+.pill{display:inline-block;border:1px solid var(--gold);color:var(--coffee);font-size:10px;letter-spacing:.1em;padding:5px 8px;margin:3px 3px 0 0;text-transform:uppercase}
+.client-logos{display:grid;grid-template-columns:repeat(4,1fr);gap:7mm;align-items:center;margin-top:15mm}
+.client-logos img{max-width:100%;max-height:18mm;object-fit:contain;}
+.small{font-size:15px}.contact-box{background:var(--espresso);color:#fff;padding:14mm}.contact-box p{color:#e4d9c9}.contact-line{font-size:22px;padding:7px 0;border-bottom:1px solid #604c3a}
+.note{font-size:9px;color:#897d70;margin-top:9px}
+
+/* Clean monochrome typography: all text is black for consistent print readability. */
+body, body * { color: #000 !important; }
+.page.dark { background: var(--cream) !important; color: #000 !important; }
+.toolbar { background: #f5f1e9 !important; }
+.contact-box { background: #fffdf8 !important; }
+.toolbar button { background: #e1ba66 !important; color: #000 !important; }
+@page{size:A4;margin:0}
+@media print{body{background:white}.toolbar{display:none}.book{padding:0}.page{margin:0;box-shadow:none;page-break-after:always;break-after:page}.page:last-child{page-break-after:auto}}
+</style>
+</head>
+<body>
+<div class="toolbar"><span>ROYAL CAFE · CORPORATE PRODUCT CATALOGUE · A4</span><button onclick="window.print()">PRINT / SAVE AS PDF</button></div>
+<div class="book">
+
+<section class="page dark">
+  <div class="brand"><img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/images/logo.png"><b>ROYAL CAFE</b></div>
+  <p class="kicker">CORPORATE PRODUCT CATALOGUE · BENGALURU</p>
+  <h1 class="cover-title">Coffee, made <em class="gold">beautifully.</em></h1>
+  <p class="cover-sub">Thoughtful coffee machines, beverage products and workplace refreshment solutions — created around the cup, the workflow and the space.</p>
+  <img class="cover-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/01/11.jpg">
+  <div class="cover-mark">MACHINES · BEVERAGES · PANTRY · FRESH FRUIT</div>
+  <div class="footer"><span>royalcafeblr.com</span><span>01</span></div>
+</section>
+
+<section class="page">
+  <p class="kicker">01 / THE ROYAL CAFE APPROACH</p>
+  <h2>Good coffee is a<br><em>daily ritual.</em></h2>
+  <div class="split" style="margin-top:9mm">
+    <div>
+      <p>We believe a coffee machine should do more than make a cup. It should look right in the room, feel simple to use and make the coffee worth coming back for.</p>
+      <p>That is the thinking behind Royal Cafe. From bean-to-cup systems and filter coffee equipment to coffee, tea and pantry essentials, we bring together solutions for everyday refreshment.</p>
+      <h3 style="margin-top:12mm">Built for different spaces</h3>
+      <ul class="list">
+        <li>Corporate offices and shared workspaces</li><li>Commercial and hospitality environments</li><li>Institutions and high-footfall locations</li><li>Workplace pantry and refreshment programmes</li>
+      </ul>
+    </div>
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/02/1.png">
+  </div>
+  <div class="footer"><span>ROYAL CAFE · WORKPLACE REFRESHMENT</span><span>02</span></div>
+</section>
+
+<section class="page">
+  <p class="kicker">02 / COFFEE MACHINE COLLECTION</p>
+  <h2>Find the right machine<br>for your <em>workplace.</em></h2>
+  <p>Explore Royal Cafe's machine range, from convenient bean-to-cup coffee to traditional filter coffee and hot-water boilers.</p>
+  <div class="grid3" style="margin-top:8mm">
+    <div class="product-card">
+      <img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/images/RoyalCfe-17-9-26-00007-copy.jpg">
+      <p class="kicker">BEAN-TO-CUP</p><h3>Royal B2C Machine</h3>
+      <p>Fresh coffee convenience with a wide beverage selection for busy workplaces.</p>
+      <p class="small"><b>3–4 cups/min</b><br>Up to <b>400 cups/day</b></p>
+    </div>
+    <div class="product-card">
+      <img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/images/RoyalCfe-17-9-26-00005_1-copy.jpg">
+      <p class="kicker">SEMI-AUTOMATIC</p><h3>Royal Filter Coffee Machine</h3>
+      <p>Designed for workplaces that value the familiar taste of filter coffee and tea.</p>
+      <p class="small"><b>5–6 cups/min</b><br>Up to <b>500 cups/day</b></p>
+    </div>
+    <div class="product-card">
+      <img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/03/b1.jpg">
+      <p class="kicker">COMPACT SERIES</p><h3>Royal Boilers Series</h3>
+      <p>Hot-water boiler range for offices, canteens and hospitality spaces.</p>
+      <p class="small"><b>5L and 12L</b><br>Approx. 10 cups per litre</p>
+    </div>
+  </div>
+  <p class="note">Capacity figures are published on the Royal Cafe website and should be reconfirmed against the exact model/configuration before quotation or print distribution.</p>
+  <div class="footer"><span>ROYAL CAFE · MACHINE COLLECTION</span><span>03</span></div>
+</section>
+
+<section class="page dark">
+  <p class="kicker">03 / ROYAL B2C MACHINE</p>
+  <h2>Freshly prepared.<br><em class="gold">Simply enjoyed.</em></h2>
+  <div class="split" style="margin-top:8mm;grid-template-columns:1.1fr .9fr">
+    <img class="machine-photo" style="height:137mm;background:#30271f" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/images/RoyalCfe-17-9-26-00007-copy.jpg">
+    <div>
+      <p>The Royal B2C bean-to-cup machine is designed to bring convenient coffee preparation to offices, commercial spaces, hospitality venues and high-footfall locations.</p>
+      <h3 class="gold">Beverage selection</h3>
+      <ul class="list" style="border-color:#594a3d">
+        <li>Espresso</li><li>Cappuccino</li><li>Café Latte</li><li>Americano</li><li>Hot Milk</li><li>Hot Tea</li><li>Hot Water</li><li>Steam</li>
+      </ul>
+      <div style="display:flex;gap:10mm;margin-top:12mm">
+        <div><div class="big-stat">3–4</div><p>cups per minute</p></div>
+        <div><div class="big-stat">400</div><p>cups per day (up to)</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>ROYAL CAFE · BEAN-TO-CUP</span><span>04</span></div>
+</section>
+
+<section class="page">
+  <p class="kicker">04 / FILTER COFFEE & HOT WATER</p>
+  <h2>Tradition, served<br>at workplace <em>pace.</em></h2>
+  <div class="split" style="margin-top:7mm">
+    <div>
+      <img class="machine-photo" style="height:105mm" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/images/RoyalCfe-17-9-26-00005_1-copy.jpg">
+      <h3 style="margin-top:7mm">Royal Filter Coffee Machine</h3>
+      <p>Designed for workplaces and high-demand environments, with strong, light and black coffee options alongside tea and hot milk.</p>
+      <div class="grid2">
+        <div class="feature"><div class="big-stat">5–6</div><p>cups per minute</p></div>
+        <div class="feature"><div class="big-stat">500</div><p>cups per day (up to)</p></div>
+      </div>
+    </div>
+    <div>
+      <img class="machine-photo" style="height:105mm" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/03/b1.jpg">
+      <h3 style="margin-top:7mm">Royal Boilers Series</h3>
+      <p>Available in 5-litre and 12-litre capacities. Each litre serves approximately 10 cups. The 12-litre model can provide up to 120 cups per serving cycle.</p>
+      <ul class="list"><li>5L and 12L capacity options</li><li>Hot water on demand</li><li>Designed for easy operation, cleaning and maintenance</li><li>Suitable for offices, canteens and hospitality spaces</li></ul>
+    </div>
+  </div>
+  <p class="note">Cup output depends on serving size, operating conditions and selected configuration.</p>
+  <div class="footer"><span>ROYAL CAFE · FILTER & BOILER RANGE</span><span>05</span></div>
+</section>
+
+<section class="page">
+  <p class="kicker">05 / COFFEE & BEVERAGE PRODUCTS</p>
+  <h2>The essentials behind<br>every good <em>cup.</em></h2>
+  <p>Royal Cafe's product collection includes coffee and tea options for everyday workplace use and refreshment.</p>
+  <div class="grid3" style="margin-top:7mm">
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/coffee%20bean.webp"><h3>Royal Coffee Beans</h3><p>Selected beans with aroma and bold flavour.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/fc.jpg"><h3>Royal Filter Coffee Powder</h3><p>South Indian filter coffee flavour and aroma.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/coffee%20powder.png"><h3>Royal Instant Coffee</h3><p>A convenient coffee option for everyday breaks.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/tea.jpg"><h3>Royal Tea Powder</h3><p>Tea with balanced flavour, colour and strength.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/masala%20tea.jpg"><h3>Royal Masala Tea</h3><p>Tea blended with aromatic spices.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/ctea.jpeg"><h3>Royal Cardamom Tea</h3><p>Traditional tea character with cardamom aroma.</p></div>
+  </div>
+  <div class="footer"><span>ROYAL CAFE · COFFEE & TEA</span><span>06</span></div>
+</section>
+
+<section class="page">
+  <p class="kicker">06 / TEA BAGS & MORE</p>
+  <h2>More choice for<br>more kinds of <em>breaks.</em></h2>
+  <div class="grid3" style="margin-top:9mm">
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/tbag.webp"><h3>Royal Assam Tea Bags</h3><p>Bold tea flavour in a convenient tea-bag format.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/ft.webp"><h3>Royal Flavoured Tea Bags</h3><p>Flavoured tea options with aromatic notes.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/mt.webp"><h3>Royal Green Tea Bags</h3><p>A light, refreshing tea option.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/fgt.jpg"><h3>Flavoured Green Tea</h3><p>Green tea with additional flavour profiles.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/lt.jpeg"><h3>Royal Lemon Tea Bags</h3><p>Citrus notes for a refreshing cup.</p></div>
+    <div class="product-card"><img class="product-photo" src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/products/bm.webp"><h3>Hot Chocolate & Badam Milk</h3><p>Comforting non-coffee beverage choices.</p></div>
+  </div>
+  <p class="note">Product range and availability may vary. Please confirm current stock, pack sizes and ingredient details before ordering.</p>
+  <div class="footer"><span>ROYAL CAFE · BEVERAGE RANGE</span><span>07</span></div>
+</section>
+
+<section class="page">
+  <p class="kicker">07 / CORPORATE PANTRY SOLUTIONS</p>
+  <h2>Everything your pantry<br>needs. <em>One partner.</em></h2>
+  <div class="split" style="margin-top:7mm">
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/images/rc.png">
+    <div>
+      <p>Royal Cafe brings together a broad range of everyday workplace pantry essentials, helping businesses organise their requirements through one supply partner.</p>
+      <ul class="list">
+        <li><b>Cookies & snacks</b> — everyday quick bites</li>
+        <li><b>Coffee & tea</b> — powders and beverage essentials</li>
+        <li><b>Fresh fruits</b> — fruit selections for the workplace</li>
+        <li><b>Dry fruits</b> — almonds, cashews, raisins and more</li>
+        <li><b>Bakery essentials</b> — for meetings and coffee breaks</li>
+        <li><b>Soups & beverage mixes</b> — warm refreshment choices</li>
+      </ul>
+      <p style="margin-top:8mm">Supply can be discussed around your team's preferences, consumption and replenishment needs.</p>
+    </div>
+  </div>
+  <div class="footer"><span>ROYAL CAFE · PANTRY SERVICES</span><span>08</span></div>
+</section>
+
+<section class="page">
+  <p class="kicker">08 / FRESH FRUIT SUPPLY</p>
+  <h2>Freshness, delivered<br>to your <em>business.</em></h2>
+  <div class="split" style="margin-top:7mm">
+    <div>
+      <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/images/rf.png">
+      <p class="note">Royal Cafe website imagery from its fruit and refreshment collection.</p>
+    </div>
+    <div>
+      <p>Royal Cafe sources fresh fruits through farmers, local wholesale markets and import channels, with flexible supply quantities for businesses across Bengaluru and surrounding rural areas.</p>
+      <div style="display:flex;gap:10mm;margin:10mm 0">
+        <div><div class="big-stat">10 kg</div><p>starting order size</p></div>
+        <div><div class="big-stat">5,000 kg</div><p>large-volume requirement</p></div>
+      </div>
+      <h3>From requirement to delivery</h3>
+      <ul class="list">
+        <li>01 · Share fruit varieties, quantity and location</li>
+        <li>02 · Source and select based on availability</li>
+        <li>03 · Prepare the order to agreed requirements</li>
+        <li>04 · Coordinate delivery to your location</li>
+      </ul>
+      <p class="note">Quantities and service coverage are subject to product availability, delivery location and schedule confirmation.</p>
+    </div>
+  </div>
+  <div class="footer"><span>ROYAL CAFE · FRESH FRUIT SUPPLY</span><span>09</span></div>
+</section>
+
+<section class="page">
+  <p class="kicker">09 / CORPORATE RELATIONSHIPS</p>
+  <h2>Trusted partnerships.<br>Lasting <em>relationships.</em></h2>
+  <p>Royal Cafe's website features organisations across aerospace, automotive, industrial, technology, facilities and hospitality sectors. The organisations shown below are presented as valued relationships on the website.</p>
+  <div class="client-logos">
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/clients/mahindra-aerospace-logo_new.png">
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/clients/advics.png">
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/clients/aisin.png">
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/clients/ikas_corporate_solutions_logo.jpeg">
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/clients/itron.png">
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/clients/kern.jpeg">
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/clients/Chefcraft-logo-scaled.png">
+    <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/clients/cheftalk.png">
+  </div>
+  
+  <div class="footer"><span>ROYAL CAFE · CORPORATE RELATIONSHIPS</span><span>10</span></div>
+</section>
+
+<section class="page dark">
+  <p class="kicker">10 / LET'S TALK</p>
+  <h2 style="font-size:40px">Let's make coffee<br><em class="gold">better.</em></h2>
+  <p style="font-size:15px;max-width:120mm">Tell us about your workplace, the machine you are considering and the kind of refreshment experience you want to create. We will help you explore a solution around your requirements.</p>
+  <img src="https://raw.githubusercontent.com/Nirmalkumar233/coffee/main/assets/images/rcp.png" style="width:100%;height:90mm;object-fit:cover;margin:10mm 0">
+  <div class="contact-box">
+    <p class="kicker">CONTACT ROYAL CAFE</p>
+    <div class="contact-line"><b>Website</b> · www.royalcafeblr.com</div>
+    <div class="contact-line"><b>Email</b> · contact@royalcafeblr.com</div>
+    <div class="contact-line"><b>Phone</b> · +91 9108042035</div>
+    <div class="contact-line"><b>Address</b> · No. 1373, 1st Floor, 1st Main Road, Terige Bhavan Road, Nagarabhavi 2nd Stage, Bengaluru, Karnataka, India</div>
+  </div>
+  <p class="kicker" style="margin-top:9mm">ROYAL CAFE · YOUR WORKPLACE REFRESHMENT PARTNER</p>
+  <div class="footer"><span>royalcafeblr.com</span><span>11</span></div>
+</section>
+
+</div>
+</body></html>
